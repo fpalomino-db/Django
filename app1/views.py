@@ -9,7 +9,7 @@ def home(request):
 def saludo(request):
     return HttpResponse('Hola mundo')
 def hola(request):
-    mascotas = ['Luna', 'Dovi','Hosh','Tú']
+    mascotas = ['Luna', 'Dovi','Hosh','Tú','Tumama']
     return render(request, 'hola.html',{
         'nombre': 'Fabrizio',
         'mascotas': mascotas
