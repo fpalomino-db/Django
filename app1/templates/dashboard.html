@@ -61,6 +61,7 @@
                     {% else %}
                         Estado : Adoptado
                     {% endif %}
+                    <a href="{% url 'app1:eliminarRegistro' mascota.id %}"><button>Eliminar</button></a>
                     <br><br>
                 </li>
                 {% endfor %}

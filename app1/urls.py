@@ -1,11 +1,12 @@
 from django.urls import path, include
 from . import views
 
-app_name= 'app1'
+app_name = 'app1'
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('saludo',views.saludo, name='saludo'),
-    path('hola', views.hola, name= 'hola'),
-    path('dashboard', views.dashboard, name= 'dashboard') 
+    path('saludo',views.saludo,name='saludo'),
+    path('hola',views.hola,name='hola'),
+    path('dashboard',views.dashboard,name='dashboard'),
+    path('eliminarRegistro/<int:idMascota>',views.eliminarRegistro,name='eliminarRegistro')
 ]
